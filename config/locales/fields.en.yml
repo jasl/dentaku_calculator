@@ -1,0 +1,69 @@
+en:
+  activerecord:
+    attributes:
+      field:
+        name: Name
+        title: Title
+        label: Label
+        hint: Hint
+        prompt: Prompt
+        accessibilities:
+          hidden: Hidden
+          read: Read-only
+          read_and_write: Normal
+
+  activemodel:
+    attributes:
+      field_options:
+        presence: Required
+        acceptance: Acceptance
+        confirmation: Confirmation
+        exclusion: Exclusion
+        format: Format
+        inclusion: Inclusion
+        length: Length
+        numericality: Numericality
+        message: Message
+        with: Regexp
+        in: In
+        minimax: Minimum
+        maximum: Maximum
+        is: Equal
+        lower_bounds:
+          disabled: off
+          greater_than: '>'
+          greater_than_or_equal_to: '>='
+        upper_bounds:
+          disabled: off
+          less_than: '<'
+          less_than_or_equal_to: '<='
+
+  errors:
+    messages:
+      # ParseError
+      node_invalid: "%{operator} requires %{expect} operands, but got %{actual}"
+      too_few_operands: "%{operator} has too few operands"
+      undefined_function: "undefined function %{function_name}"
+      unprocessed_token: "unprocessed token %{token_name}"
+      unknown_case_token: "unknown case token %{token_name}"
+      unbalanced_bracket: "unbalanced bracket"
+      unbalanced_parenthesis: "unbalanced parenthesis"
+      unknown_grouping_token: "unknown grouping token %{token_name}"
+      not_implemented_token_category: "not implemented for tokens of category %{token_category}"
+      invalid_statement: "invalid statement"
+      # TokenizerError
+      parse_error: "parse error at: '%{at}'"
+      too_many_opening_parentheses: "too many opening parentheses"
+      too_many_closing_parentheses: "too many closing parentheses"
+      unexpected_zero_width_match: "unexpected zero-width match (:%{category}) at '%{at}'"
+      # ArgumentError
+      invalid_operator: "%{operation} requires operands that respond to %{operator}"
+      invalid_value: "string input '%{string}' is not coercible to numeric"
+      too_few_arguments: "%{function_name} requires at least %{at_least} argument, but given %{given}"
+      too_much_arguments: "%{function_name} requires at most %{at_most} argument, but given %{given}"
+      incompatible_type: "%{function_name} requires arguments to be %{expect} expressions"
+      # UnboundVariableError
+      unbound_variable: "no value provided for variables: %{unbound}"
+      # ZeroDivisionError
+      zero_division: "zero division"
+
